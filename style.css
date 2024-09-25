@@ -63,7 +63,6 @@ a{
 }
 
 .apresentacao_principal{
-    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,12 +71,11 @@ a{
 }
 
 .apresentacao_texto{
-    width: 50%;
     font-size: 1rem;
 }
 
 .apresentacao_icone{
-    width: 3%;
+    width: 1.5%;
 }
 
 .rodape{
@@ -92,4 +90,44 @@ a{
 .rodape_texto {
     font-size: 20px;
     text-align: center;
+}
+
+@media (max-width: 1280px){
+    .cabecalho{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cabecalho_menu{
+        align-items: center;
+    }
+
+    .cabecalho_menu_link{
+        font-size: 1.75rem;
+    }
+
+    .apresentacao{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .apresentacao_imagem{
+        width: 75%;
+    }
+
+    .apresentacao_principal{
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 3%;
+    }
+    
+    .apresentacao_texto{
+        padding: 5%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .apresentacao_icone{
+        width: 3.5%;
+    }
 }
